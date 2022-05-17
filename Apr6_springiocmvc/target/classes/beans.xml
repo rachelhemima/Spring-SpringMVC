@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			 -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+		<bean name="garden" class="ai.jobiak.ioc.Garden">
+		<property name="fruits">
+							<list>
+											<value>Mango</value>
+											<value>Kiwi</value>
+											<value>Water melon</value>
+											<value>Orange</value>										
+							</list>
+		</property>
+			<property name="trees">
+							<set>
+											<value>Baniyan Tree</value>
+											<value>Oak Tree</value>
+											<value>Neem Tree</value>
+											<value>Tamarind Tree</value>										
+							</set>
+		</property>
+		<property name="cityFruits">
+							<map>
+											 <entry key="hyderabad" value="custard apple"></entry>
+										    <entry key="banginpally" value="mangoes"></entry>
+										    <entry key="ananthapur" value="garapes"></entry>
+										      <entry key="rajahmundry" value="banana"></entry>
+							</map>
+		</property>
+		<constructor-arg name="flowers">
+							<list>
+											<value>Jasmine</value>
+											<value>Rose</value>
+											<value>Lilly</value>
+											<value>Tulip</value>										
+							</list>
+		</constructor-arg>
+		</bean>
+		<!--  
+		<bean name="employee" class="ai.jobiak.ioc1.Employee">
+				<property name="emplist">
+						<list>
+            							<ref bean="empdtls"/>
+							</list>
+		</property>
+		</bean>
+		<bean name="empdtls" class="ai.jobiak.ioc1.EmployeeDetails">
+						<property name="empid" value="101"/>
+						<property name="empname" value="Willam"/>
+						<property name="empsal" value="400000"/>
+		</bean>
+		-->
+	<!--  	<bean name="pointA" class="com.jobiak.auto.Point">	-->
+	<bean name="a" class="com.jobiak.auto.Point">	
+	<property name="x" value="25.5"/>
+     <property name="y"  value="35.5"/>
+	</bean>
+<!--  	<bean name="pointB" class="com.jobiak.auto.Point">	-->
+	<bean name="b" class="com.jobiak.auto.Point">
+	<property name="x" value="75.5"/>
+     <property name="y"  value="85.5"/>
+	</bean>
+
+<bean name="line" class="com.jobiak.auto.Line" autowire="constructor">	
+	<!-- 
+<bean name="line" class="com.jobiak.auto.Line" autowire="byName">	
+<bean name="line" class="com.jobiak.auto.Line" autowire="byType">	
+<bean name="line" class="com.jobiak.auto.Line">	
+	<property name="a" ref="pointA"/>
+     <property name="b" ref="pointB"/>   
+     
+     --> 
+     
+	</bean>
+</beans>
+
+			

@@ -1,0 +1,17 @@
+1649412852893	Delete element
+1649412855747	Delete element
+1649413521149	Delete element
+1649413865556	Move 'signup.jsp' to 'pages'
+1649413967849	Rename resource 'index.html'
+1649414061338	Move 'signup.jsp' to 'src'
+1649414064622	Move 'updateform.jsp' to 'src'
+1649414066823	Move 'delete.jsp' to 'src'
+1649414120472	Move 'delete.jsp' to 'webapp'
+1649414124846	Move 'signup.jsp' to 'webapp'
+1649414127150	Move 'updateform.jsp' to 'webapp'
+1649414775297	Delete element
+1649414778081	Delete element
+1649414780639	Delete element
+1649416263907	Move 'index.jsp' to 'WEB-INF'
+1649416268437	Move 'index.jsp' to 'src'
+1649416271196	Move 'index.jsp' to 'webapp'
